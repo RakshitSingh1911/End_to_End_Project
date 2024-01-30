@@ -1,0 +1,52 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="Age">Age :</label>
+        <input type="text" id="Age" name="Age" placeholder="Enter carat value ">
+    </div>
+
+    <div class="form-group">
+        <label for="Bmi">BMI :</label>
+        <input type="text" id="Bmi" name="Bmi" placeholder="Enter BMI value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="children">Children :</label>
+        <input type="text" id="children" name="children" placeholder="Enter No. of children  (float)">
+    </div>
+       
+  
+<div class="form-group">
+  <label for="Sex">Sex:</label>
+  <select id="Sex" name="Sex">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Region">Region:</label>
+  <select id="Region" name="Region">
+    <option value="southwest">SouthWest</option>
+    <option value="southeast">SouthEast</option>
+    <option value="northwest">NorthWest</option>
+    <option value="northeast">NorthEast</option>
+  </select>
+</div>
+
+
+<div class="form-group">
+  <label for="Smoker">Smoker:</label>
+  <select id="Smoker" name="Smoker">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
