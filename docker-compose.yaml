@@ -1,0 +1,20 @@
+version: "3"
+services:
+  airflow:
+    build:
+      context: ./
+      dockerfile: Dockerfile.airflow
+    image: airflowimage
+    container_name: Isurance-airflow
+    ports:
+      - "8000:8000"
+    
+  flaskapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile.flask
+    image: flaskimage
+    container_name: Insurance-flask
+    ports:
+      - "80:80"
+    

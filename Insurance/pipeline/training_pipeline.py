@@ -49,3 +49,7 @@ def start_training_pipeline():
 
     except Exception as e:
         raise InsuranceException(e, sys)
+
+if __name__ == "__main__":
+    # If the script is run directly, execute the function
+    start_training_pipeline()

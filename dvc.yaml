@@ -1,0 +1,19 @@
+stages:
+  training:
+    cmd: python Insurance/pipeline/training_pipeline.py 
+    deps:
+      - Insurance/pipeline/training_pipeline.py
+      - Insurance/components/data_ingestion.py
+      - Insurance/components/data_transformation.py
+      - Insurance/components/model_trainer.py
+      - G:\Python\Insurannce_project\Insurance\components\model_evaluation.py
+
+    outs:
+      - artifact/data_ingestion/feature_store/insurance.csv
+      - artifact/data_ingestion/dataset/test.csv
+      - artifact/data_ingestion/dataset/train.csv
+      - artifact/data_transformation/target_encoder/target_encoder.pkl
+      - artifact/data_transformation/transformer/transformer.pkl
+      - artifact/data_transformation/transformed/test.npz
+      - artifact/data_transformation/transformed/test.npz
+      - artifact/data_validation/report.yaml

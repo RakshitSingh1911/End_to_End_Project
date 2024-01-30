@@ -5,4 +5,12 @@ PyYAML
 python-dotenv
 dill
 pymongo
+dvc
+numpy
+mlflow 
+dvc 
+dagshub
+sklearn
+scipy
+
 -e .

@@ -8,7 +8,6 @@ import pandas as pd
 from Insurance import utils
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-from imblearn.combine import SMOTETomek
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import RobustScaler
 from Insurance.config import TARGET_COLUMN
